@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug in Elixir that can occur when using `Process.exit/2` within an `Enum.each/2` callback.  The improper use of `Process.exit/2` leads to unexpected termination of the process before the loop has fully completed. The solution demonstrates the proper way to handle this situation, ensuring that the entire list is processed before exiting.
